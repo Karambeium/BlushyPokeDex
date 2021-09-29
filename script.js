@@ -1,18 +1,15 @@
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch';
 
-const dbURL = "http://https://pokeapi.co/api/v2/";
+const dbURL = "https://pokeapi.co/api/v2/";
 
 let currentPokemon = {};
+let currentPokemonData = {};
 
-/**
- * 1. Get Trainers
- * Implement a function that would retrieve all trainers fromt the db
- * Endpoint: GET /trainer
- */
-async function getPokemon() {
+async function getPokemon(name) {
     try {
-        let pokemon = await fetch(dbURL + "Bulbasaur");
-        let data = await pokemon.json();
+        currentPokemon = await fetch(dbURL + "pokemon/" + name);
+        currentPokemonData = await currentPokemon.json();
+        console.log(currentPokemonData);
     }
     catch {
         console.log("Does Not Exist");
