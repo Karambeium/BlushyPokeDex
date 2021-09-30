@@ -1,5 +1,5 @@
 .container {
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     justify-content: space-evenly;
 }
@@ -15,7 +15,7 @@ button {
 .image-box {
     display: flex;
     justify-content: center;
-    color: white;
+    color: red;
     width: 30px;
     height: 30px;
     bottom: 0;
