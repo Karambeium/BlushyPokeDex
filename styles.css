@@ -16,7 +16,7 @@ button {
     background-color: white;
     width: 25vw;
     height: 25vw;
-    position: relative;
+    position: absolute;
     top: 8vw;
     left: 8vw;
 }
