@@ -23,9 +23,10 @@ button {
 
 /*Puts Pokemon Image inside Box*/
 .inside-box {
+    display: block;
     position: absolute;
-    display: flex;
-    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #pokemonImage {
