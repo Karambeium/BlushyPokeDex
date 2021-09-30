@@ -14,8 +14,8 @@ button {
 
 .image-box {
     background-color: white;
-    width: 400px;
-    height: 400px;
+    width: 400vw;
+    height: 400vh;
     position: absolute;
     top: 100px;
     left: 150px;
