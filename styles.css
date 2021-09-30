@@ -1,10 +1,15 @@
-.pokedex-background {
+.container {
     background-color: red;
     display: flex;
+    justify-content: space-evenly;
 }
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    height: 50px;
 }
 
 /*Style the search field*/
@@ -18,9 +23,9 @@ form.pokemon-search input[type=text] {
 }
 
 /*Style the submit button*/
-form.pokemon-search button {
+#searchBar, #searchButton, button {
     float: left;
-    width: 20%;
+    width: auto;
     padding: 10px;
     background: #2196F3;
     color: white;
