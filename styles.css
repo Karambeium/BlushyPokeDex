@@ -26,6 +26,10 @@ button {
     position: absolute;
     top: 8vw;
     left: 8vw;
+
+}
+
+.pokemon-image {
     width: 15vw;
     height: 15vw;
 }
