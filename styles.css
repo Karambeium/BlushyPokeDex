@@ -16,9 +16,9 @@ button {
     background-color: white;
     width: 40vw;
     height: 40vh;
-    position: absolute;
+    /*position: absolute;
     top: 100px;
-    left: 150px;
+    left: 150px;*/
 }
 
 /*Style the search field*/
