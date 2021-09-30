@@ -24,12 +24,12 @@ button {
 /*Puts Pokemon Image inside Box*/
 .inside-box {
     position: absolute;
+    top: 24.545px;
+    left: 24.545px;
 }
 
 #pokemonImage {
     width: 20vw;
-    top: 24.545px;
-    left: 24.545px;
 }
 
 /*Style the search field*/
