@@ -29,7 +29,7 @@ button {
 #pokemonImage {
     display: flex;
     width: 20vw;
-    align-items: center;
+    align-content: center;
 }
 
 /*Style the search field*/
