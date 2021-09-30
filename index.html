@@ -6,19 +6,17 @@
 <title>PokeDex</title>
 <body>
 <div class="container" style="height: 100vh; width: 100vw">
-    <div class="pokemon-image">
-
-    </div>
-
     <form class="pokemon-search">
         <input type="text" placeholder="Search.." name="search" id="searchBar">
-        <button type="submit" onClick = "getPokemonByName(document.getElementById('searchBar').value)" id="searchButton"><!--<i class="fas fa-search"></i>-->Search</button>
      </form>
      <!-- <button id = "fromSearch" onClick = "getPokemonByName(document.getElementById('searchBar').value)">Search</button> -->
-     <button id = "byName" onClick = "getPokemonByName('ditto')">By Name</button>
-     <button id = "byIndex" onClick = "getPokemonByIndex(150)">By Index</button>
+     <button id = "byName" onClick = "getPokemonByName(document.getElementById('searchBar').value)">Search</button>
+     <!-- <button id = "byIndex" onClick = "getPokemonByIndex(150)">By Index</button> -->
      <button id = "up" onClick = "incrementPokemonUp()">Up</button>
      <button id = "down" onClick = "incrementPokemonDown()">Down</button>
+     <div class="pokemon-image">
+        <img id = "pokemonImage" src = ""></img>
+    </div>
 </div>
 </body>
 </html>
