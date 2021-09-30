@@ -17,6 +17,8 @@ button {
     width: 40vw;
     height: 40vw;
     position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 /*Style the search field*/
