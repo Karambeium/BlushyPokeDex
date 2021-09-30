@@ -23,6 +23,8 @@ button {
 
 /*Style the search field*/
 form.pokemon-search input[type=text] {
+    position:absolute;
+    left:80px;
     padding: 10px;
     font-size: 17px;
     border: 1px solid black;
