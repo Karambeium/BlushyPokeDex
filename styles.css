@@ -12,6 +12,15 @@ button {
     height: 50px;
 }
 
+.image-box {
+    background-color: white;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 8vw;
+    left: 8vw;
+}
+
 /*Style the search field*/
 form.pokemon-search input[type=text] {
     padding: 10px;
