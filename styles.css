@@ -15,7 +15,7 @@ button {
 .image-box {
     display: flex;
     justify-content: center;
-    color: red;
+    background-color: red;
     width: 30px;
     height: 30px;
     bottom: 0;
