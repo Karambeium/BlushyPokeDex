@@ -13,12 +13,12 @@ button {
 }
 
 .image-box {
-    display: flex;
-    justify-content: center;
     background-color: white;
     width: 100px;
     height: 100px;
     position: absolute;
+    top: 300;
+    left: 150;
 }
 
 /*Style the search field*/
