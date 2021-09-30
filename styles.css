@@ -28,6 +28,7 @@ button {
 
 #pokemonImage {
     width: 25vw;
+    height: auto;
 }
 
 /*Style the search field*/
