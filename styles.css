@@ -19,6 +19,7 @@ button {
     position: absolute;
     top: 8vw;
     left: 8vw;
+    margin: 5px;
 }
 
 /*Puts Pokemon Image inside Box*/
@@ -28,6 +29,7 @@ button {
 
 #pokemonImage {
     width: 20vw;
+    
 
 }
 
