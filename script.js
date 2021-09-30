@@ -13,6 +13,7 @@ async function getPokemonByName(name) {
         console.log(currentPokemonData);
         index = currentPokemonData.id;
         console.log(index);
+        populateData();
     }
     catch {
         console.log("Does Not Exist");
@@ -26,6 +27,7 @@ async function getPokemonByIndex(id) {
         currentPokemonData = await currentPokemon.json();
         console.log(currentPokemonData);
         console.log(index);
+        populateData();
     }
     catch {
         console.log("Does Not Exist");
@@ -41,6 +43,7 @@ async function incrementPokemonUp() {
     try {
         getPokemonByIndex(index);
         console.log(index);
+        populateData();
     }
     catch {
         console.log("Does Not Exist");
@@ -56,6 +59,7 @@ async function incrementPokemonDown() {
     try {
         getPokemonByIndex(index);
         console.log(index);
+        populateData();
     }
     catch {
         console.log("Does Not Exist");
@@ -66,4 +70,9 @@ function checkIndex() {
     if(typeof(index) === "undefined") {
         index = 0;
     }
+}
+
+function populateData() {
+    document.getElementById("pokemonImage").src = currentPokemonData.sprites.front_default;
+    console.log(document.getElementById("pokemonImage").src);
 }
