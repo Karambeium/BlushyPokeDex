@@ -10,7 +10,11 @@
     <form class="pokemon-search" action="https://github.com/Karambeium/BlushyPokeDex/tree/frontend">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+     </form>
+     <button id = "byName" onClick = "getPokemonByName('ditto')">By Name</button>
+     <button id = "byIndex" onClick = "getPokemonByIndex(150)">By Index</button>
+     <button id = "up" onClick = "incrementPokemonUp()">Up</button>
+     <button id = "down" onClick = "incrementPokemonDown()">Down</button>
 </div>
 </body>
 </html>
