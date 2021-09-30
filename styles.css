@@ -16,14 +16,15 @@ button {
     background-color: white;
     width: 25vw;
     height: 25vw;
-    position: fixed;
+    position: relative;
     top: 8vw;
     left: 8vw;
 }
 
 /*Puts Pokemon Image inside Box*/
 .inside-box {
-    position: relative;
+    position: absolute;
+    
 }
 
 /*Style the search field*/
