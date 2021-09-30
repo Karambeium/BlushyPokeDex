@@ -21,6 +21,16 @@ button {
     left: 8vw;
 }
 
+/*Puts Pokemon Image inside Box*/
+.inside-box {
+    position: absolute;
+}
+
+#pokemonImage {
+    width: 25vw;
+    height: auto;
+}
+
 /*Style the search field*/
 form.pokemon-search input[type=text] {
     padding: 10px;
