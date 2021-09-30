@@ -1,3 +1,55 @@
-.pokedex-background {
+.container {
     background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    height: 50px;
+}
+
+.image-box {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+/*Style the search field*/
+form.pokemon-search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/*Style the submit button*/
+#searchBar, #searchButton, button {
+    float: left;
+    width: auto;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.pokemon-search button:hover {
+    background: #0b7dda;
+}
+
+form.pokemon-search::after {
+    content: "";
+    clear: both;
+    display: table;
 }
