@@ -52,7 +52,7 @@ button {
     --container-width: 25vw;
     --container-height: 25vw;
 
-    --info-sizeVW: 15vw;
+    --info-sizeVW: 15vh;
     --info-sizeVW: calc(var(--ratio) * 15vw);
 }
 
