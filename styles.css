@@ -43,7 +43,17 @@ button {
 #info {
     display: flex;
     justify-content: center;
-    font-display: inherit;
+    font-size: var(--info-sizeVW);
+}
+
+:root {
+    --ratio: 0.5;
+    --reverse-ratio: 2;
+    --container-width: 25vw;
+    --container-height: 25vw;
+
+    --info-sizeVW: 15vw;
+    --info-sizeVW: calc(var(--ratio) * 15vw);
 }
 
 /*Style the search field*/
