@@ -53,7 +53,7 @@ button {
     --container-height: 15vw;
 
     --info-sizeVW: 15vh;
-    --info-sizeVW: calc(var(--ratio) * 15vw);
+    --info-sizeVH: calc(var(--ratio) * 15vw);
 }
 
 /*Style the search field*/
