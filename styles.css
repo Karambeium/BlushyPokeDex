@@ -41,8 +41,8 @@ button {
 }
 
 #info {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    font-size: 40;
 }
 
 /*Style the search field*/
