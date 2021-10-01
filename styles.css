@@ -28,7 +28,6 @@ button {
     position: absolute;
     top: 8vw;
     left: 35vw;
-    text-align: center;
 }
 
 /*Puts Pokemon Image inside Box*/
@@ -43,7 +42,7 @@ button {
 
 #info {
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     font-size: 2em;
     flex: auto;
 }
