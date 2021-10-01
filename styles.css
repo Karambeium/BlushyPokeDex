@@ -44,7 +44,6 @@ button {
     display: flex;
     justify-content: center;
     font-display: inherit;
-    font-size: 20vw;
 }
 
 /*Style the search field*/
