@@ -22,6 +22,7 @@ button {
 }
 
 .info-box {
+    display: flex;
     background-color: white;
     width: 25vw;
     height: 25vw;
