@@ -14,18 +14,23 @@
      <!-- <button id = "byIndex" onClick = "getPokemonByIndex(150)">By Index</button> -->
      <button id = "up" onClick = "incrementPokemonUp()">Up</button>
      <button id = "down" onClick = "incrementPokemonDown()">Down</button>
-    </div>
-    <p id = "info">
-
-    </p>
-    <p id = moves>
-        
-    </p>
+     <button id = "infoShower" onClick = "show('info')">Information</button>
+     <button id = "movesShower" onClick = "show('moves')">Moves</button>
 </div>
 
 <div class="image-box">
     <div class="pokemonImage, inside-box">
         <img id = "pokemonImage" src = ""></img>
+    </div>
+</div>
+
+<div class="info-box">
+    <p id = "info">
+
+    </p>
+    <p id = "moves" style = "display: none">
+        
+    </p>
 </div>
 
 

@@ -89,6 +89,7 @@ function populateData() {
     document.getElementById("moves").innerHTML = "";
     currentPokemonData.moves.forEach(move => document.getElementById("moves").innerHTML += (stringFormatter(move.move.name) + "<br>"));
     console.log(document.getElementById("moves").innerHTML);
+    document.getElementById("searchBar").value = currentPokemonData.name.substring(0,1).toUpperCase() + currentPokemonData.name.substring(1);
 }
 
 function stringFormatter(str) {
@@ -98,4 +99,16 @@ function stringFormatter(str) {
     // strArr.forEach(string => string = string.toUpperCase());
     strArr.forEach(string => temp += string + " ");
     return(temp);
+}
+
+function show(id) {
+    document.getElementById(id).style.display = "block";
+    if (id === "moves") {
+        document.getElementById("info").style.display = "none";
+    } else if (id === "info") {
+        document.getElementById("moves").style.display = "none";
+        if (document.getElementById("moves").style.height >= "25vw") {
+            document.getElementById("moves").style.overflow = "scroll"
+        }
+    }
 }
