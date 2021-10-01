@@ -44,9 +44,7 @@ button {
     display: flex;
     justify-content: center;
     font-size: 2em;
-    flex-basis: 400px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: auto;
 }
 
 /*Style the search field*/
