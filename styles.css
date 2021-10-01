@@ -42,8 +42,7 @@ button {
 
 #info {
     display: flex;
-    justify-content: center;
-    align-items: stretch;   
+    justify-content: center;  
     font-size: 15vw;
 }
 
