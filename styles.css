@@ -33,6 +33,7 @@ button {
 /*Puts Pokemon Image inside Box*/
 .inside-box {
     position: absolute;
+    font-size: 50px;
 }
 
 #pokemonImage {
@@ -43,7 +44,6 @@ button {
 #info {
     display: flex;
     justify-content: center;
-    
 }
 
 /*Style the search field*/
