@@ -43,6 +43,7 @@ button {
 #info {
     display: flex;
     justify-content: center;  
+    position: absolute;
     font-size: 5vw;
 }
 
