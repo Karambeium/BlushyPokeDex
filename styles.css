@@ -47,8 +47,6 @@ button {
 }
 
 :root {
-    --ratio: 0.5;
-    --reverse-ratio: 2;
     --container-width: 15vw;
     --container-height: 15vw;
 
