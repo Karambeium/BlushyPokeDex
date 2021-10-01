@@ -40,6 +40,11 @@ button {
     height: auto;
 }
 
+#info {
+    display: flex;
+    align-items: center;
+}
+
 /*Style the search field*/
 form.pokemon-search input[type=text] {
     /* position:absolute; */
