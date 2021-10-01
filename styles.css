@@ -43,7 +43,8 @@ button {
 #info {
     display: flex;
     justify-content: center;
-    font-size: 60;
+    align-items: stretch;   
+    font-size: 60vw;
 }
 
 /*Style the search field*/
