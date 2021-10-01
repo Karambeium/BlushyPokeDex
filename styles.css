@@ -28,7 +28,6 @@ button {
     position: absolute;
     top: 8vw;
     left: 35vw;
-    font-size: 5vw;
 }
 
 /*Puts Pokemon Image inside Box*/
@@ -44,6 +43,8 @@ button {
 #info {
     display: flex;
     justify-content: center;
+    font-display: inherit;
+    font-size: 20vw;
 }
 
 /*Style the search field*/
