@@ -41,9 +41,12 @@ button {
 }
 
 #info {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     font-size: 2em;
-    
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 /*Style the search field*/
