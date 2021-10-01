@@ -41,7 +41,8 @@ button {
 }
 
 #info {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     font-size: 40;
 }
 
