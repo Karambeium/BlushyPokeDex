@@ -1,3 +1,8 @@
+@font-face {
+    font-family: gameFont;
+    src: url(./Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
 .container {
     background-color: crimson;
     display: flex;
@@ -6,6 +11,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: gameFont;
 }
 
 button {

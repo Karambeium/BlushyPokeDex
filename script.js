@@ -5,9 +5,12 @@ const dbURL = "https://pokeapi.co/api/v2/";
 let currentPokemon = {};
 let currentPokemonData = {};
 let index;
+let info;
+let moves;
 
 async function getPokemonByName(name) {
     try {
+        index = null;
         currentPokemon = await fetch(dbURL + "pokemon/" + name);
         currentPokemonData = await currentPokemon.json();
         console.log(currentPokemonData);
@@ -16,7 +19,7 @@ async function getPokemonByName(name) {
         populateData();
     }
     catch {
-        console.log("Does Not Exist");
+        console.log("oops");
     }
 }
 
@@ -30,7 +33,7 @@ async function getPokemonByIndex(id) {
         populateData();
     }
     catch {
-        console.log("Does Not Exist");
+        console.log("oops");
     }
 }
 
@@ -46,7 +49,7 @@ async function incrementPokemonUp() {
         populateData();
     }
     catch {
-        console.log("Does Not Exist");
+        console.log("oops");
     }
 }
 
@@ -62,7 +65,7 @@ async function incrementPokemonDown() {
         populateData();
     }
     catch {
-        console.log("Does Not Exist");
+        console.log("oops");
     }
 }
 
@@ -75,9 +78,7 @@ function checkIndex() {
 function populateData() {
     document.getElementById("pokemonImage").src = currentPokemonData.sprites.front_default;
     console.log(document.getElementById("pokemonImage").src);
-    let infoString = "";
-    infoString += 
-    document.getElementById("info").innerHTML = 
+    info = 
         "Height: " + currentPokemonData.height + "<br>" + 
         "Weight: " + currentPokemonData.weight + "<br>" +
         "HP: " + currentPokemonData.stats[0].base_stat + "<br>" +
@@ -90,6 +91,9 @@ function populateData() {
     currentPokemonData.moves.forEach(move => document.getElementById("moves").innerHTML += (stringFormatter(move.move.name) + "<br>"));
     console.log(document.getElementById("moves").innerHTML);
     document.getElementById("searchBar").value = currentPokemonData.name.substring(0,1).toUpperCase() + currentPokemonData.name.substring(1);
+    document.getElementById("info").innerHTML = info;
+    document.getElementById("type") = currentPokemonData.types.type.name;
+    // console.log(currentPokemonData.types.type.name);
 }
 
 function stringFormatter(str) {
