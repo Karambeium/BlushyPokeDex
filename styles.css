@@ -96,3 +96,12 @@ form.pokemon-search::after {
     clear: both;
     display: table;
 }
+
+/*Style the up and down buttons*/
+#up {
+    background-color: grey;
+    width: 10vw;
+    height: 30vw;
+    top: 6vw;
+    left: 20vw;
+}
