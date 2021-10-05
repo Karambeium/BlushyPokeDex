@@ -106,6 +106,7 @@ form.pokemon-search::after {
     top: 10vw;
     left: 35vw;
     position: absolute;
+    text-align: center;
 }
 
 #down {
@@ -116,4 +117,5 @@ form.pokemon-search::after {
     top: 20vw;
     left: 35vw;
     position: absolute;
+    text-align: center;
 }
