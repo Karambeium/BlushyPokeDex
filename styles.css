@@ -19,12 +19,14 @@ button {
 }
 
 .image-box {
-    background-color: white;
+    background-color: black;
     width: 25vw;
     height: 25vw;
     position: absolute;
     top: 8vw;
     left: 8vw;
+    border: white;
+    border-width: 2px;
 }
 
 .info-box {
