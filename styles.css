@@ -92,7 +92,6 @@ button {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    display: inline-block;
     left: 20vw;
     top: 35vw;
     cursor: pointer;
