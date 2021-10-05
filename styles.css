@@ -37,6 +37,17 @@ button {
     overflow: scroll;
 }
 
+/*Puts Pokemon's name into name box*/
+.name-box {
+    background-color: white;
+    width: 10;
+    height: 5vw;
+    position: absolute;
+    top: 30vw;
+    left: 10vw;
+    color: black;
+}
+
 /*Puts Pokemon Image inside Box*/
 .inside-box {
     position: absolute;
