@@ -27,7 +27,7 @@ form.pokemon-search input[type=text] {
     left:80px;
     padding: 10px;
     font-size: 17px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     float: left;
     width: 80%;
     background: #f1f1f1;
