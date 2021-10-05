@@ -84,8 +84,7 @@ button {
     cursor: pointer;
 }
 
-#byName {
-    background: black;
+form.pokemon-search button {
     color: white;
     padding: 10px;
     height: 25px;
@@ -99,15 +98,6 @@ button {
 
 form.pokemon-search button:hover {
     background: black;
-    color: white;
-    padding: 10px;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    left: 20vw;
-    top: 35vw;
-    cursor: pointer;
-    font-size: 17px;
 }
 
 form.pokemon-search::after {
