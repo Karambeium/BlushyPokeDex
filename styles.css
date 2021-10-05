@@ -28,6 +28,7 @@ button {
     position: absolute;
     top: 8vw;
     left: 35vw;
+    overflow: scroll;
 }
 
 /*Puts Pokemon Image inside Box*/
@@ -89,4 +90,3 @@ form.pokemon-search::after {
     clear: both;
     display: table;
 }
-
