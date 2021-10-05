@@ -5,8 +5,6 @@
 
 .container {
     background-color: crimson;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 * {
@@ -77,6 +75,7 @@ button {
 form.pokemon-search input[type=text] {
     /* position:absolute; */
     left:80px;
+    top: 60vw;
     padding: 10px;
     font-size: 17px;
     border: 1px solid black;
