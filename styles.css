@@ -102,7 +102,7 @@ form.pokemon-search::after {
     background-color: grey;
     color: white;
     width: 5vw;
-    height: 8vw;
+    height: 9vw;
     top: 10vw;
     left: 35vw;
     position: absolute;
@@ -113,7 +113,7 @@ form.pokemon-search::after {
     background-color: grey;
     color: white;
     width: 5vw;
-    height: 8vw;
+    height: 9vw;
     top: 20vw;
     left: 35vw;
     position: absolute;
