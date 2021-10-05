@@ -103,7 +103,7 @@ form.pokemon-search::after {
     color: white;
     width: 5vw;
     height: 8vw;
-    top: 6vw;
-    left: 10vw;
+    top: 8vw;
+    left: 20vw;
     position: absolute;
 }
