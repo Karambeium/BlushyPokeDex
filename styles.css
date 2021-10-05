@@ -105,4 +105,5 @@ form.pokemon-search::after {
     height: 8vw;
     top: 6vw;
     left: 10vw;
+    position: absolute;
 }
