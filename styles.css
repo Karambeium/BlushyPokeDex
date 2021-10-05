@@ -28,6 +28,7 @@ button {
     position: absolute;
     top: 8vw;
     left: 35vw;
+    overflow: scroll;
 }
 
 /*Puts Pokemon Image inside Box*/
@@ -38,6 +39,20 @@ button {
 #pokemonImage {
     width: 25vw;
     height: auto;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    flex-wrap: wrap;
+}
+
+#moves {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    flex-wrap: wrap;
 }
 
 /*Style the search field*/
