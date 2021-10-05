@@ -47,6 +47,13 @@ button {
     flex-wrap: wrap;
 }
 
+#moves {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+}
+
 /*Style the search field*/
 form.pokemon-search input[type=text] {
     /* position:absolute; */
@@ -82,3 +89,4 @@ form.pokemon-search::after {
     clear: both;
     display: table;
 }
+
