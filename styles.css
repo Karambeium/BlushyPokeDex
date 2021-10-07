@@ -172,3 +172,23 @@ form.pokemon-search::after {
     top: 2vw;
     left: 8vw;
 }
+
+.yellow-dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(226, 223, 23);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 10vw;
+}
+
+.green-dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(7, 136, 46);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 12vw;
+}
