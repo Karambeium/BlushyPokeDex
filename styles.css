@@ -151,3 +151,12 @@ form.pokemon-search::after {
     width: 8vw;
     height: 4vw;
 }
+
+.blue-dot {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(0, 132, 255, 0.911);
+    border-radius: 50%;
+    display: flex;
+
+}
