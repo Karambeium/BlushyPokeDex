@@ -145,9 +145,9 @@ form.pokemon-search::after {
 #byName {
     background-color: black;
     position: absolute;
-    top: 35vw;
-    left: 35vw;
+    top: 33vw;
+    left: 33vw;
     color: white;
     width: 8vw;
-    height: 3vw;
+    height: 4vw;
 }
