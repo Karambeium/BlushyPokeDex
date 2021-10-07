@@ -16,6 +16,7 @@ async function getPokemonByName(name) {
         document.getElementById("info").innerHTML = "";
         document.getElementById("moves").innerHTML = "";
         document.getElementById("location").innerHTML = "";
+        document.getElementById("type").innerHTML = "";
         index = null;
         currentPokemon = await fetch(dbURL + "pokemon/" + name);
         currentPokemonData = await currentPokemon.json();
@@ -24,7 +25,6 @@ async function getPokemonByName(name) {
         console.log(index);
         currentPokemonLocations = await fetch(dbURL + "pokemon/" + currentPokemonData.id + "/encounters");
         currentLocationsJSON = await currentPokemonLocations.json();
-        // console.log(currentLocationsJSON);
         populateData();
         return;
     }
@@ -35,6 +35,7 @@ async function getPokemonByName(name) {
         document.getElementById("info").innerHTML = "No Details, Invalid Pokemon";
         document.getElementById("moves").innerHTML = "No Moves, Invalid Pokemon";
         document.getElementById("location").innerHTML = "CANNOT BE CAUGHT IN THE WILD";
+        document.getElementById("type").innerHTML = "NO TYPE";
     }
 }
 
@@ -43,6 +44,8 @@ async function getPokemonByIndex(id) {
         document.getElementById("pokemonImage").src = "";
         document.getElementById("info").innerHTML = "";
         document.getElementById("moves").innerHTML = "";
+        document.getElementById("location").innerHTML = "";
+        document.getElementById("type").innerHTML = "";
         index = id;
         currentPokemon = await fetch(dbURL + "pokemon/" + index);
         currentPokemonData = await currentPokemon.json();
@@ -60,7 +63,8 @@ async function getPokemonByIndex(id) {
         document.getElementById("pokemonImage").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Generic_error_message.png/220px-Generic_error_message.png";
         document.getElementById("info").innerHTML = "No Details, Invalid Pokemon";
         document.getElementById("moves").innerHTML = "No Moves, Invalid Pokemon";
-        document.getElementById("locations").innerHTML = "CANNOT BE CAUGHT IN THE WILD";
+        document.getElementById("location").innerHTML = "CANNOT BE CAUGHT IN THE WILD";
+        document.getElementById("type").innerHTML = "NO TYPE";
     }
 }
 
@@ -105,6 +109,8 @@ function checkIndex() {
 function populateData() {
     document.getElementById("pokemonImage").src = currentPokemonData.sprites.front_default;
     console.log(document.getElementById("pokemonImage").src);
+    document.getElementById("searchBar").innerHTML = currentPokemonData.name;
+    console.log(currentPokemonData.name);
     info = 
         "Height: " + currentPokemonData.height + "<br>" + 
         "Weight: " + currentPokemonData.weight + "<br>" +
@@ -133,7 +139,7 @@ function populateData() {
     console.log(locationList);
     currentPokemonData.types.forEach(typea => {
         document.getElementById("type").innerHTML += typea.type.name + "<br>";
-    })
+    });
 }
 
 function stringFormatter(str) {
