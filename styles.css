@@ -83,7 +83,7 @@ form.pokemon-search button {
     width: 25px;
     border-radius: 50%;
     left: 20vw;
-    top: 55vw;
+    top: 100vw;
     cursor: pointer;
     font-size: 17px;
 }
