@@ -131,6 +131,8 @@ function populateData() {
     console.log(currentLocationsJSON);
     document.getElementById("location").innerHTML = locationList;
     console.log(locationList);
+    console.log(currentPokemonData.types[0].type.name);
+    document.getElementById("type").innerHTML = currentPokemonData.types[0].type.name;
 }
 
 function stringFormatter(str) {
