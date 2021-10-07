@@ -62,7 +62,7 @@ button {
 
 /*Style the search field*/
 form.pokemon-search input[type=text] {
-    /* position:absolute; */
+    position:absolute;
     left: 8vw;
     top: 35vw;
     padding: 10px;
@@ -76,7 +76,7 @@ form.pokemon-search input[type=text] {
 /*Style the submit button*/
 
 form.pokemon-search button {
-    float: right;
+    position: absolute;
     color: blue;
     padding: 10px;
     height: 25px;
