@@ -166,9 +166,9 @@ form.pokemon-search::after {
 .red-dot {
     height: 30px;
     width: 30px;
-    background-color: rgb(202, 10, 10);
+    background-color: rgb(245, 42, 42);
     border-radius: 50%;
     position: absolute;
-    top: 4vw;
+    top: 3vw;
     left: 8vw;
 }
