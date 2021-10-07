@@ -180,7 +180,7 @@ form.pokemon-search::after {
     border-radius: 50%;
     position: absolute;
     top: 2vw;
-    left: 10vw;
+    left: 12vw;
 }
 
 .green-dot {
@@ -190,5 +190,5 @@ form.pokemon-search::after {
     border-radius: 50%;
     position: absolute;
     top: 2vw;
-    left: 12vw;
+    left: 16vw;
 }
