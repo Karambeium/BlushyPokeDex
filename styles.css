@@ -192,3 +192,13 @@ form.pokemon-search::after {
     top: 2vw;
     left: 14vw;
 }
+
+.type-container {
+    background-color: white;
+    width: 5vw;
+    height: 5vw;
+    color: black;
+    position: absolute;
+    top: 80vw;
+    left: 20vw;
+}
