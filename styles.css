@@ -119,3 +119,14 @@ form.pokemon-search::after {
     position: absolute;
     text-align: center;
 }
+
+#infoShower {
+    background-color: deepskyblue;
+    color: black;
+    width: 6vw;
+    height: 8vw;
+    top: 20vw;
+    left: 50vw;
+    position: absolute;
+    text-align: center;
+}
