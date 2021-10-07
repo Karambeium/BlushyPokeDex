@@ -141,3 +141,7 @@ form.pokemon-search::after {
     position: absolute;
     text-align: center;
 }
+
+#byName {
+    background-color: black;
+}
