@@ -160,4 +160,5 @@ form.pokemon-search::after {
     position: absolute;
     top: 2vw;
     left: 3vw;
+    border-color: white;
 }
