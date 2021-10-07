@@ -157,5 +157,7 @@ form.pokemon-search::after {
     width: 25px;
     background-color: rgb(23, 165, 175);
     border-radius: 50%;
-    display: inline-block;
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
 }
