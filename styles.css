@@ -76,7 +76,7 @@ form.pokemon-search input[type=text] {
 /*Style the submit button*/
 
 form.pokemon-search button {
-    color: white;
+    color: blue;
     padding: 10px;
     height: 25px;
     width: 25px;
