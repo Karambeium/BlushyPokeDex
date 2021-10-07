@@ -8,8 +8,13 @@ let index;
 let info;
 let moves;
 
+
 async function getPokemonByName(name) {
     try {
+        document.getElementById("pokemonImage").src = "";
+        document.getElementById("info").innerHTML = "";
+        document.getElementById("moves").innerHTML = "";
+        document.getElementById("location").innerHTML = "";
         index = null;
         currentPokemon = await fetch(dbURL + "pokemon/" + name);
         currentPokemonData = await currentPokemon.json();
@@ -17,23 +22,38 @@ async function getPokemonByName(name) {
         index = currentPokemonData.id;
         console.log(index);
         populateData();
+        return;
     }
-    catch {
-        console.log("oops");
+    catch (error){
+        console.log(error);
+        index = null;
+        document.getElementById("pokemonImage").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Generic_error_message.png/220px-Generic_error_message.png";
+        document.getElementById("info").innerHTML = "No Details, Invalid Pokemon";
+        document.getElementById("moves").innerHTML = "No Moves, Invalid Pokemon";
+        document.getElementById("location").innerHTML = "CANNOT BE CAUGHT IN THE WILD";
     }
 }
 
 async function getPokemonByIndex(id) {
     try {
+        document.getElementById("pokemonImage").src = "";
+        document.getElementById("info").innerHTML = "";
+        document.getElementById("moves").innerHTML = "";
         index = id;
         currentPokemon = await fetch(dbURL + "pokemon/" + index);
         currentPokemonData = await currentPokemon.json();
         console.log(currentPokemonData);
         console.log(index);
         populateData();
+        return;
     }
-    catch {
-        console.log("oops");
+    catch (error) {
+        console.log(error);
+        index = null;
+        document.getElementById("pokemonImage").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Generic_error_message.png/220px-Generic_error_message.png";
+        document.getElementById("info").innerHTML = "No Details, Invalid Pokemon";
+        document.getElementById("moves").innerHTML = "No Moves, Invalid Pokemon";
+        document.getElementById("locations").innerHTML = "CANNOT BE CAUGHT IN THE WILD";
     }
 }
 
@@ -89,10 +109,11 @@ function populateData() {
         "Speed: " + currentPokemonData.stats[5].base_stat + "<br>";
     document.getElementById("moves").innerHTML = "";
     currentPokemonData.moves.forEach(move => document.getElementById("moves").innerHTML += (stringFormatter(move.move.name) + "<br>"));
-    console.log(document.getElementById("moves").innerHTML);
-    document.getElementById("searchBar").value = currentPokemonData.name.substring(0,1).toUpperCase() + currentPokemonData.name.substring(1);
+    // console.log(document.getElementById("moves").innerHTML);
+    // document.getElementById("name").value = currentPokemonData.name.substring(0,1).toUpperCase() + currentPokemonData.name.substring(1);
     document.getElementById("info").innerHTML = info;
-    document.getElementById("type") = currentPokemonData.types.type.name;
+    // document.getElementById("type").innerHTML = currentPokemonData.types.type.name;
+    // document.getElementById("location") = currentPokemonData;
     // console.log(currentPokemonData.types.type.name);
 }
 
@@ -102,6 +123,15 @@ function stringFormatter(str) {
     strArr = strArr.map(string => string.substring(0,1).toUpperCase() + string.substring(1));
     // strArr.forEach(string => string = string.toUpperCase());
     strArr.forEach(string => temp += string + " ");
+    return(temp);
+}
+
+function locationStringFormatter(str) {
+    let temp = "";
+    let strArr = str.split("-");
+    strArr = strArr.map(string => string.substring(0,1).toUpperCase() + string.substring(1));
+    // strArr.forEach(string => string = string.toUpperCase());
+    strArr.forEach(string => temp += string + "<br>");
     return(temp);
 }
 
