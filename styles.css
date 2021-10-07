@@ -151,3 +151,44 @@ form.pokemon-search::after {
     width: 8vw;
     height: 4vw;
 }
+
+.blue-dot {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(23, 165, 175);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 3vw;
+    border: ridge white;
+}
+
+.red-dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(245, 42, 42);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 8vw;
+}
+
+.yellow-dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(226, 223, 23);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 11vw;
+}
+
+.green-dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(7, 136, 46);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: 14vw;
+}
