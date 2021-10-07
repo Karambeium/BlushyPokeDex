@@ -130,3 +130,14 @@ form.pokemon-search::after {
     position: absolute;
     text-align: center;
 }
+
+#movesShower {
+    background-color: deepskyblue;
+    color: black;
+    width: 6vw;
+    height: 8vw;
+    top: 20vw;
+    left: 70vw;
+    position: absolute;
+    text-align: center;
+}
