@@ -7,7 +7,8 @@ let currentPokemonData = {};
 let index;
 let info;
 let moves;
-
+let currentPokemonLocations = {};
+let currentLocationsJSON = {};
 
 async function getPokemonByName(name) {
     try {
@@ -21,6 +22,9 @@ async function getPokemonByName(name) {
         console.log(currentPokemonData);
         index = currentPokemonData.id;
         console.log(index);
+        currentPokemonLocations = await fetch(dbURL + "pokemon/" + currentPokemonData.id + "/encounters");
+        currentLocationsJSON = await currentPokemonLocations.json();
+        // console.log(currentLocationsJSON);
         populateData();
         return;
     }
@@ -45,6 +49,9 @@ async function getPokemonByIndex(id) {
         console.log(currentPokemonData);
         console.log(index);
         populateData();
+        currentPokemonLocations = await fetch(dbURL + "pokemon/" + id + "/encounters");
+        currentLocationsJSON = await currentPokemonLocations.json();
+        console.log(currentLocationsJSON);
         return;
     }
     catch (error) {
@@ -109,19 +116,27 @@ function populateData() {
         "Speed: " + currentPokemonData.stats[5].base_stat + "<br>";
     document.getElementById("moves").innerHTML = "";
     currentPokemonData.moves.forEach(move => document.getElementById("moves").innerHTML += (stringFormatter(move.move.name) + "<br>"));
-    // console.log(document.getElementById("moves").innerHTML);
-    // document.getElementById("name").value = currentPokemonData.name.substring(0,1).toUpperCase() + currentPokemonData.name.substring(1);
     document.getElementById("info").innerHTML = info;
-    // document.getElementById("type").innerHTML = currentPokemonData.types.type.name;
-    // document.getElementById("location") = currentPokemonData;
-    // console.log(currentPokemonData.types.type.name);
+    let locationList = "";
+    currentLocationsJSON.forEach(location => {
+        console.log(location.location_area.name);
+        areaPieces = location.location_area.name.split("-");
+        let a = "";
+        areaPieces.forEach(area => {
+            a += (area.substring(0,1).toUpperCase() + area.substring(1) + " ");
+        });
+        a += "<br>"
+        locationList += a;
+    });
+    console.log(currentLocationsJSON);
+    document.getElementById("location").innerHTML = locationList;
+    console.log(locationList);
 }
 
 function stringFormatter(str) {
     let temp = "";
     let strArr = str.split("-");
     strArr = strArr.map(string => string.substring(0,1).toUpperCase() + string.substring(1));
-    // strArr.forEach(string => string = string.toUpperCase());
     strArr.forEach(string => temp += string + " ");
     return(temp);
 }
@@ -130,7 +145,6 @@ function locationStringFormatter(str) {
     let temp = "";
     let strArr = str.split("-");
     strArr = strArr.map(string => string.substring(0,1).toUpperCase() + string.substring(1));
-    // strArr.forEach(string => string = string.toUpperCase());
     strArr.forEach(string => temp += string + "<br>");
     return(temp);
 }
