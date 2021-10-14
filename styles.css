@@ -155,8 +155,8 @@ form.pokemon-search::after {
 #name {
     color: white;
     text-align: center;
-    width: 6vw;
-    height: 8vw;
+    width: 8vw;
+    height: 10vw;
 }
 
 .blue-dot {
@@ -208,6 +208,7 @@ form.pokemon-search::after {
     position: absolute;
     top: 3vw;
     left: 44vw;
+    text-align: center;
 }
 
 .type-container {

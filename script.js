@@ -10,8 +10,6 @@ let moves;
 let currentPokemonLocations = {};
 let currentLocationsJSON = {};
 
-let currentPokemonName = {};
-
 async function getPokemonByName(name) {
     try {
         document.getElementById("pokemonImage").src = "";
@@ -45,7 +43,6 @@ async function getPokemonByIndex(id) {
         document.getElementById("pokemonImage").src = "";
         document.getElementById("info").innerHTML = "";
         document.getElementById("moves").innerHTML = "";
-        document.getElementById("name").innerHTML = "";
         index = id;
         currentPokemon = await fetch(dbURL + "pokemon/" + index);
         currentPokemonData = await currentPokemon.json();
@@ -55,11 +52,6 @@ async function getPokemonByIndex(id) {
         currentPokemonLocations = await fetch(dbURL + "pokemon/" + id + "/encounters");
         currentLocationsJSON = await currentPokemonLocations.json();
         console.log(currentLocationsJSON);
-
-        currentPokemonName = await fetch(dbURL + "pokemon/" + id + "/name");
-        currentPokemonNameJSON = await currentPokemonName.json();
-        console.log(currentPokemonNameJSON);
-
         return;
     }
     catch (error) {
@@ -112,6 +104,7 @@ function checkIndex() {
 
 function populateData() {
     document.getElementById("pokemonImage").src = currentPokemonData.sprites.front_default;
+    document.getElementById("name").innerHTML = currentPokemonData.name;
     console.log(document.getElementById("pokemonImage").src);
     info = 
         "Height: " + currentPokemonData.height + "<br>" + 
