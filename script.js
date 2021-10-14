@@ -108,6 +108,7 @@ function checkIndex() {
 
 function populateData() {
     document.getElementById("pokemonImage").src = currentPokemonData.sprites.front_default;
+    document.getElementById("name").innerHTML = currentPokemonData.name;
     console.log(document.getElementById("pokemonImage").src);
     document.getElementById("searchBar").innerHTML = currentPokemonData.name;
     console.log(currentPokemonData.name);
