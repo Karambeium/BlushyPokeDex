@@ -12,6 +12,7 @@ let currentLocationsJSON = {};
 
 async function getPokemonByName(name) {
     try {
+        document.getElementById("name").src = "";
         document.getElementById("pokemonImage").src = "";
         document.getElementById("info").innerHTML = "";
         document.getElementById("moves").innerHTML = "";
