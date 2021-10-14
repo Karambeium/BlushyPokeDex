@@ -194,11 +194,11 @@ form.pokemon-search::after {
 }
 
 .name-box {
-    height: 4vw;
+    height: 6vw;
     width: 20vw;
     background-color: black;
     color: white;
     position: absolute;
-    top: 2vw;
-    left: 46vw;
+    top: 3vw;
+    left: 45vw;
 }
